@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        a{font-size: 20px;margin: 5px 20px;text-decoration: none; color: black}
+        .menu{width: 140px;height: 50px;display: inline-block;line-height: 50px;text-align: center;background: #EEEEEE;}
+   		form{width: 850px;margin: 50px auto;}
+    </style>
+<script type="text/javascript">
+
+function a() {
+				var oName =document.getElementById("name");
+				var oPw1 = document.getElementById("pw1");
+				var oPw2 = document.getElementById("pw2");
+				if(oName.value==""){
+					alert("enter user name first! ");
+					oName.focus();
+					return false;
+				}
+				if(oPw1.value == "") {
+					alert("enter password fisrt!");
+				oPw1.focus();
+				return false;
+				}
+				if(oPw2.value == "") {
+					alert("enter confirm password fisrt!");
+				oPw2.focus();
+				return false;
+				}
+				if(oPw2.value !=oPw1.value) {
+					alert("Passwords are not consistent ！");
+				oPw2.focus();
+				return false;
+				}
+				
+			}
+
+</script>
+</head>
+<body>
+
+<center>
+    <a href="../index.html"  ><div class="menu">Exit</div></a>
+
+</center>
+<hr />
+
+
+
+
+
+<form  action="adduser.php" method="post"  onsubmit="return a()" >
+    User name:<input type="text" name="user_name" id="name" >
+    User password:<input type="text" name="user_pw" id="pw1" >
+    Confirm password:<input type="text" name="user_pw" id="pw2" >
+    
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>

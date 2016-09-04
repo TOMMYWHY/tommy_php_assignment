@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title></title>
+<style type="text/css">
+    h2{
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+<form method="post" action="create_server.php">
+    <h2>Register</h2>
+	<table align="center"  border="0" cellspacing="0" cellpadding=""   width="400px">
+    	<tr>
+        	<td>Name:</td>
+            <td><input type="text" name="user_name" required></td>
+        </tr>
+        <tr>
+        	<td>Address:</td>
+            <td><input type="text" name="address" required></td>
+        </tr>
+        <tr>
+        	<td>Phone:</td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+        	<td>Email:</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+        	<td>Account Number:</td>
+            <td><input type="text" name="account_number" required></td>
+        </tr>
+        <tr>
+        	<td>Account Type:</td>
+        	<td>
+            	<select name="type" required>
+                	<option>Cheque</option>
+                	<option>Saving Account</option>
+                    <option>Credit Account</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+
+        	<td><br> <a href="index.php"><input type="button" name="back" value="Back"></a></td>
+                
+            <td><br> <input type="submit" name="submit_create" value="Submit"></td>
+
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

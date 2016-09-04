@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		form{width: 300px; margin: 10px auto; padding-top:50px ;}
+		.div1{width: 300px; margin: 10px auto;}
+		
+			span{width: 100px;display: inline-block;margin: 5px 0;}
+			.form1{margin:15px 0 0 180px;}
+
+			.author{height: 100px; margin-top: 100px;}
+			.txt{width: 200px;margin: 0 auto; text-align: center;}
+		</style>	
+	
+	</head>
+	<body>
+		<form action="admin/adminLogin.php" method="post">
+			<h2>Admin</h2>
+			<div><span> Username:</span><input type="text" name="admin_name"  value="" /></div>
+			<div><span> Password:</span><input type="text" name="admin_pw"  value="" /></div>
+			<input type="submit" name="admin_login" class="form1" value="Login" />
+		</form>
+		
+			<form action="user/userLogin.php" method="post">
+			<h2>User</h2>
+			<div><span> Username:</span><input type="text" name="user_name"  value="" /></div>
+			<div><span> Password:</span><input type="text" name="user_pw"  value="" /></div>
+
+				<input type="submit" name="user_login" class="form1" value="Login" />
+			
+		</form>
+		<div class="div1">
+		<a href="user/adduser.html">
+			<input type="submit" name="user_sign_up" class="form1"  value="Sign up" />
+		</a>
+		</div>
+		
+			
+		<div class="author">
+		<hr />
+			<div class="txt">Copyright &copy;  Tommy.<br /><br /> Tel:021 081 62452</div>
+		</div>
+		
+		
+	</body>
+</html>

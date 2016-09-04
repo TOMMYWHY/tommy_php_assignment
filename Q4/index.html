@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			table,
+			tr,
+			th,
+			td {
+				border: none;
+			}
+			
+			th {
+				text-align: left;
+				background: grey;
+			}
+		</style>
+
+		<script type="text/javascript">
+//				var oAddress = document.getElementById("address");
+		
+//			window.onload = function() {
+//				var oAddress = document.getElementById("address");
+//				oAddress.focus();
+//				
+////				function a() {
+//////				var oAddress = document.getElementById("address");
+////				if(oAddress.value == "") {
+////					alert("enter address first!");
+////				}
+////			}
+//			}
+
+			function a() {
+				var oAddress = document.getElementById("address");
+				if(oAddress.value == "") {
+					alert("enter address first!");
+				oAddress.focus();
+				return false;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form id="fm" action="show.php" method="get" onsubmit="return a()">
+
+			<table border="" cellspacing="" cellpadding="">
+				<tr>
+					<th style="width: 200px;">Item</th>
+					<th style="width: 300px;">Quantity</th>
+				</tr>
+				<tr>
+					<td>Tires</td>
+					<td><input type="text" name="tires" value="" pattern="[0-9]{1,2}" /></td>
+				</tr>
+				<tr>
+					<td>Oil</td>
+					<td><input type="text" name="oil" value="" pattern="[0-9]{1,2}" /></td>
+				</tr>
+				<tr>
+					<td>Spark Plugs</td>
+					<td><input type="text" name="spark_plugs" value="" pattern="[0-9]{1,2}" /></td>
+				</tr>
+				<tr>
+					<td>shipping Address</td>
+					<td><input style="width: 300px;" id="address" type="text" name="address" value="" /></td>
+				</tr>
+
+			</table>
+
+			<input type="submit" name="submit" value="Submit Order" />
+
+		</form>
+	</body>
+
+</html>
